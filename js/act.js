@@ -1,26 +1,30 @@
-document.addEventListener("click", (e) => {console.log(e.target)});
 const numofBox = document.querySelectorAll('div[id^="box"]').length;
 const plusBox = 4 - (numofBox % 4);
-/*for(let i=1;i<=numofBox;i++)
-{
-    numbox = document.getElementById("box"+i);
-    numbox.addEventListener("click", check(i));
-}*/
 
-///////////////
-let boxxx = document.getElementById("box6");
-boxxx.addEventListener("click", booox6);
-function booox6()
+
+for(let i=1;i<=numofBox;i++)
 {
-    document.getElementById("box6").style.width="90%";
+    console.log(document.getElementById("box"+i));
+    document.getElementById("box"+i).addEventListener("click", checked);
 }
-////////////////
 
-//function Reload(i);
 
+
+
+
+
+//체크하는 함수
+function checked(e)
+{   
+    console.log(e.target)
+    e.target.style.width="90%";
+    e.stopPropagation();
+}
+
+//컨테이너 작업
 let container = document.getElementById("container");
 container.addEventListener("click", uncheck);
-function uncheck()
+function uncheck(e)
 {
     for(let i=1;i<=numofBox;i++) 
     {
