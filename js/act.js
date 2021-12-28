@@ -1,21 +1,19 @@
 const numofBox = document.querySelectorAll('div[id^="box"]').length;
 const plusBox = 4 - (numofBox % 4);
 
-
-for(let i=1;i<=numofBox;i++)
-{
-    console.log(document.getElementById("box"+i));
-    document.getElementById("box"+i).addEventListener("click", checked);
-}
-
-
-
-
+document.addEventListener('DOMContentLoaded',()=>{
+    for(let i=1;i<=numofBox;i++)
+    {
+        console.log(document.getElementById("box"+i));
+        document.getElementById("box"+i).addEventListener("click", checked);
+    }
+});
 
 
 //체크하는 함수
 function checked(e)
 {   
+    uncheck();
     console.log(e.target)
     e.target.style.width="90%";
     e.stopPropagation();
