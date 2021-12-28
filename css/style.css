@@ -1,64 +1,68 @@
 * {
-    margin:0;
-    user-select: none;
-  }
-  body {
-    background-color:#F0EDCC;
-    color : #02343F;
-  }
-  header {
-    width:100%;
-    height:100px;
-    background-color : #02343F;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-  }
-  header > h1 {
-    color : #F0EDCC;
-    font-size : 450%;
-  }
-  main {
-    display:flex;
-    justify-content: center;
-    align-items: stretch;
-  }
-  aside {
-    display:flex;
-    flex-direction: column;
-    justify-content: stretch;
-    width:11%;
-    border: solid 3px #02343F;
-    border-radius: 5px;
-    height:500px;
-    margin-right:10px;
-    margin-top:10px;
-  }
-  main > div {
-    border: solid 3px #02343F;
-    border-radius: 5px;
-    width:86%;
-    height:500px;
-    margin-top:10px;
-  }
-  aside > h6 {
-    width:100%;
-    font-size:180%;
-    margin-left:5px;
-  }
-  aside > a {
-    margin-left:5px;
-  }
-  a:link {
-    color:#AABBCC;
-    text-decoration: none;
-  }
-  a:visited {
-    color:#AABBCC;
-    text-decoration: none;
-  }
-  a:hover {
-    color:black;
-    text-decoration: none;
-  }
-  
+  margin:0;
+  user-select: none;
+  background-color:#F0EDCC;
+  color : #02343F;
+}
+
+header {
+width:100%;
+height:100px;
+background-color : #02343F;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+header > h1 {
+color : #F0EDCC;
+background-color: #02343F;
+font-size : 450%;
+}
+
+main {
+display:flex;
+justify-content: center;
+align-items: stretch;
+}
+
+aside {
+display:flex;
+flex-direction: column;
+justify-content: stretch;
+width:11%;
+border: solid 3px #02343F;
+border-radius: 5px;
+height:auto;
+margin-right:10px;
+margin-top:10px;
+}
+aside > h6 {
+width:80%;
+font-size:180%;
+margin-left:5px;
+}
+aside > a {
+margin-left:5px;
+}
+a:link {
+color:#AABBCC;
+text-decoration: none;
+}
+a:visited {
+color:#AABBCC;
+text-decoration: none;
+}
+a:hover {
+color:black;
+text-decoration: none;
+}
+
+
+main > div {
+border: solid 3px #02343F;
+border-radius: 5px;
+width:86%;
+height:auto;
+margin-top:10px;
+}
+/*box.css*/
